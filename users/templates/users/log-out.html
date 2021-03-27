@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    
+   
+    {% else %}
+     
+    <h1>You signed out of your account</h1>
+    <p> It's a good idea to close all browser windows.</p>
+    <a href="{% url 'login-page'%}">Login</a>  
+    {% endif %}
+</body>
+</html>
